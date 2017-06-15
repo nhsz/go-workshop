@@ -1,2 +1,3 @@
 # golang-workshop
-Solutions for MercadoLibre's Golang Workshop exercises
+
+My solutions for MercadoLibre's Golang Workshop problems
