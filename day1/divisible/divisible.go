@@ -1,9 +1,13 @@
 package divisible
 
-func SumDivisibleValuesInRange(p int) int {
+/*
+SumDivisibleValuesInRange sums all the v values within
+the range 0 <= v <= p, such that v is divisible by x or y
+*/
+func SumDivisibleValuesInRange(p, x, y int) int {
 	sum := 0
 	for v := 0; v <= p; v++ {
-		if isDivisibleBy(v, 3, 5) {
+		if IsDivisibleBy(v, x, y) {
 			sum += v
 		}
 	}
@@ -11,6 +15,7 @@ func SumDivisibleValuesInRange(p int) int {
 	return sum
 }
 
-func isDivisibleBy(v, i, j int) bool {
+// IsDivisibleBy checks if the value v is divisible by i and j
+func IsDivisibleBy(v, i, j int) bool {
 	return v%i == 0 || v%j == 0
 }

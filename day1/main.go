@@ -13,6 +13,6 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		fmt.Println(divisible.SumDivisibleValuesInRange(p))
+		fmt.Println(divisible.SumDivisibleValuesInRange(p, 3, 5))
 	}
 }
