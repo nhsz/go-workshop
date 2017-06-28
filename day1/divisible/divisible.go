@@ -1,9 +1,7 @@
 package divisible
 
-/*
-SumDivisibleValuesInRange sums all the v values within
-the range 0 <= v <= p, such that v is divisible by x or y
-*/
+// SumDivisibleValuesInRange sums all the v values within
+// the range 0 <= v <= p, such that v is divisible by x or y
 func SumDivisibleValuesInRange(p, x, y int) int {
 	sum := 0
 	for v := 0; v <= p; v++ {
